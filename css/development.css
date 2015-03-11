@@ -1,7 +1,4 @@
 /* -----------------------------------------
-   Variables
------------------------------------------ */
-/* -----------------------------------------
    Mixins
 ----------------------------------------- */
 /* -----------------------------------------
@@ -10,24 +7,15 @@
 /* -----------------------------------------
    MAIN STYLES
 ----------------------------------------- */
+html {
+  background-color: #c7bdbc;
+}
 body {
-  background-color: #f4f4f1;
-  line-height: 150%;
+  color: #5f4b4c;
   font-size: 1.5rem;
   font-size: 15px;
-}
-a {
-  color: #33a646;
-}
-a:visited,
-a:focus {
-  color: #33a646;
-}
-a:hover {
-  color: #33a646;
-}
-a.green {
-  color: #33a646 !important;
+  line-height: 150%;
+  background-color: #f6f5f1;
 }
 h1 {
   font-size: 27px;
@@ -35,15 +23,7 @@ h1 {
   font-weight: normal;
   margin: 0 0 5px;
 }
-h1 .subtitle {
-  color: #acacaa;
-  font-size: 13px;
-  text-transform: uppercase;
-  margin-top: 0px;
-  display: block;
-}
 h2 {
-  color: #acacaa;
   font-size: 13px;
   text-transform: uppercase;
   margin: 25px 0 5px;
@@ -53,7 +33,7 @@ h3 {
   margin: 5px 0 15px;
 }
 ul {
-  padding-left: 20px;
+  padding-left: 15px;
 }
 ul .reset li {
   padding: 3px 0 0;
@@ -73,191 +53,59 @@ ul.reset li {
 /* -----------------------------------------
 	Buttons
 ----------------------------------------- */
-.btn-success {
-  color: #fff !important;
-  background-color: #33a646;
+.btn-ivory-dark {
+  color: #fff;
+  background-color: #7a6667;
 }
-.btn-heading {
-  margin-left: 15px;
-  position: relative;
-  top: -2px;
-  left: 0;
+/* -----------------------------------------
+ 	Navbar STYLES
+----------------------------------------- */
+.navbar-footer {
+  padding: 1.5em 0 3em;
 }
 /* -----------------------------------------
    HEADER STYLES
 ----------------------------------------- */
-.navbar {
-  min-height: auto;
-  margin: 0;
-  background-color: #222222;
-  border: none;
-  border-radius: 0;
-}
-.navbar-brand {
-  color: #fff !important;
-  font-size: 21px;
-  font-weight: bold;
-  margin-right: 20px;
-}
-.navbar-brand .logo-symbol {
-  color: #33a646;
-  padding-right: 5px;
-}
-.navbar .nav a {
-  color: #acacaa;
-  font-size: 13px;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.navbar .nav-ico {
-  text-align: center;
-  margin-bottom: 2px;
-  display: block;
-}
-.navbar .nav-ico img {
-  width: 20px;
-}
-.navbar .nav .active {
-  color: #222222;
-  background-color: #f4f4f1;
-}
-.breadcrumbs {
-  color: #acacaa;
-  padding: 2px 0 5px;
-  background-color: #f4f4f1;
-  border-bottom: 1px dashed #acacaa;
-}
-.breadcrumbs ul {
-  margin: 0;
-  overflow: hidden;
-}
-.breadcrumbs li {
-  float: left;
-}
-.breadcrumbs .arrow {
-  padding: 2px 7px 0;
-  display: inline-block;
-}
 /* -----------------------------------------
  	CONTENT STYLES
 ----------------------------------------- */
 .content {
-  padding: 30px 0 60px;
+  padding: 2em 0;
 }
 /* -----------------------------------------
  	FORM STYLES
 ----------------------------------------- */
-form .form-control {
-  border-color: #acacaa;
-  border-radius: 0;
-}
-form.box-form {
-  padding: 10px;
-}
-form .input-ico {
-  padding-left: 40px;
-  background-repeat: no-repeat;
-  background-position: 10px 50%;
-  background-size: 22px;
-}
-form .input-ico.ico-user {
-  background-image: url(../images/icons/svg/user.svg);
-}
-form .input-ico.ico-phone {
-  background-image: url(../images/icons/svg/phone.svg);
-}
-form .input-ico.ico-mail {
-  background-image: url(../images/icons/svg/mail.svg);
-}
-form .input-ico.ico-office {
-  background-image: url(../images/icons/svg/office.svg);
+/* -----------------------------------------
+	LIST
+----------------------------------------- */
+.selection {
+  background-color: #e2ddda;
 }
 /* -----------------------------------------
- 	BOX STYLES
+	Profile
 ----------------------------------------- */
-.box {
+.profile-list .profile-item {
+  margin-bottom: 1.5em;
   background-color: #fff;
-  border: 1px solid #e4e4e4;
 }
-.box-list {
-  margin-bottom: 0;
+.profile-list .profile-photo {
+  border-right: 2px dotted #7a6667;
 }
-.box-list li {
-  font-size: 17px;
-  font-size: 1.7rem;
-  line-height: 120% !important;
-  padding: 0 !important;
-  border-bottom: 1px dashed #e4e4e4;
-  position: relative;
+.profile-list .profile-info {
+  padding: 2em 2em 2em 1em;
 }
-.box-list li:last-child {
-  border: none;
+.profile-list .profile-name {
+  font-size: 21px;
+  font-size: 2.1rem;
 }
-.box-list li.box-item-space {
-  padding: 10px !important;
+.profile-list .profile-box {
+  padding: 1em 0;
 }
-.box-list a {
-  color: #2d2d2d;
-  padding: 10px !important;
-  display: block;
-}
-.box-list a:hover {
-  text-decoration: none;
-}
-.box-list .box-list-item a {
-  display: inline;
-}
-.box-list .box-item-part {
-  color: #acacaa;
-}
-.box-list .box-item-date {
-  color: #acacaa;
-  font-size: 13px;
-  font-size: 1.3rem;
-  display: block;
-}
-.box-item-space {
-  padding: 10px 15px !important;
-}
-.box-ico img {
-  width: 18px;
-}
-.box-ico img.passive {
-  opacity: 0.15;
-}
-.box-crop .box-item-title {
-  width: 83%;
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.box-crop .box-item-part {
-  position: absolute;
-  top: 9px;
-  right: 8px;
-}
-.box .box-action a {
-  color: #33a646;
-}
-.box .dropdown-menu {
-  top: 28px;
-  right: 4px;
-  left: auto;
-}
-.circle {
-  background-color: #acacaa;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  margin-right: 5px;
-  margin-bottom: 1px;
-}
-.circle.green {
-  background-color: #33a646;
+/* -----------------------------------------
+	Footer STYLES
+----------------------------------------- */
+.footer {
+  background-color: #c7bdbc;
 }
 .relative {
   position: relative;
