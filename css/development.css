@@ -1,17 +1,21 @@
 /* -----------------------------------------
    Mixins
 ----------------------------------------- */
-/* Prvy zapis */
 /* -----------------------------------------
-   General styles
+General styles
 ----------------------------------------- */
 /* -----------------------------------------
-   MAIN STYLES
+MAIN STYLES
 ----------------------------------------- */
+html {
+  background-color: #3d3d39;
+}
 body {
-  line-height: 150%;
+  color: #5f4b4c;
   font-size: 1.5rem;
   font-size: 15px;
+  line-height: 150%;
+  background-color: #c8c8c0;
 }
 h1 {
   font-size: 27px;
@@ -29,7 +33,7 @@ h3 {
   margin: 5px 0 15px;
 }
 ul {
-  padding-left: 20px;
+  padding-left: 15px;
 }
 ul .reset li {
   padding: 3px 0 0;
@@ -49,25 +53,62 @@ ul.reset li {
 /* -----------------------------------------
 	Buttons
 ----------------------------------------- */
-.btn-success {
-  color: #fff !important;
-  background-color: green;
-}
-.btn-heading {
-  margin-left: 15px;
-  position: relative;
-  top: -2px;
-  left: 0;
+.btn-dark {
+  color: #fff;
+  background-color: #888880;
 }
 /* -----------------------------------------
-   HEADER STYLES
+	Navbar STYLES
+----------------------------------------- */
+.navbar-footer {
+  padding: 1.5em 0 3em;
+}
+/* -----------------------------------------
+HEADER STYLES
 ----------------------------------------- */
 /* -----------------------------------------
- 	CONTENT STYLES
+	CONTENT STYLES
+----------------------------------------- */
+.content {
+  padding: 2em 0;
+}
+/* -----------------------------------------
+	FORM STYLES
 ----------------------------------------- */
 /* -----------------------------------------
- 	FORM STYLES
+	LIST
 ----------------------------------------- */
+.selection {
+  background-color: #b33529;
+}
+/* -----------------------------------------
+	Profile
+----------------------------------------- */
+.profile-list .profile-item {
+  margin-bottom: 1.5em;
+  background-color: #fff;
+  border-bottom: 2px dotted #c8c8c0;
+}
+.profile-list .profile-photo img {
+  max-width: 100%;
+  display: block;
+}
+.profile-list .profile-info {
+  padding: 2em 2em 2em 1em;
+}
+.profile-list .profile-name {
+  font-size: 21px;
+  font-size: 2.1rem;
+}
+.profile-list .profile-box {
+  padding: 1em 0;
+}
+/* -----------------------------------------
+	Footer STYLES
+----------------------------------------- */
+.footer {
+  background-color: #3d3d39;
+}
 .relative {
   position: relative;
 }

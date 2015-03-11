@@ -14,14 +14,14 @@ General styles
 MAIN STYLES
 ----------------------------------------- */
 html {
-	background-color: @ivory-darker;
+	background-color: @gray-darker;
 }
 body {
 	color: #5f4b4c;
 	font-size: 1.5rem;
 	font-size: 15px;
 	line-height: 150%;
-	background-color: @ivory-light;
+	background-color: @gray-light;
 }
 
 a {
@@ -79,9 +79,9 @@ ul.reset {
 	Buttons
 ----------------------------------------- */
 .btn {
-	&-ivory-dark {
+	&-dark {
 		color: #fff;
-		background-color: @ivory-dark;
+		background-color: @gray-dark;
 	}
 }
 
@@ -148,8 +148,10 @@ HEADER STYLES
 	LIST
 ----------------------------------------- */
 .selection {
-	background-color: @ivory;
+	background-color: @red;
 }
+
+
 
 
 
@@ -163,10 +165,15 @@ HEADER STYLES
 		.profile-item {
 			margin-bottom: 1.5em;
 			background-color: #fff;
+			border-bottom: 2px dotted @gray-light;
 		}
 
 		.profile-photo {
-			border-right: 2px dotted @ivory-dark;
+
+			img {
+				max-width: 100%;
+				display: block;
+			}
 		}
 
 		.profile-info {
@@ -200,7 +207,7 @@ HEADER STYLES
 	Footer STYLES
 ----------------------------------------- */
 .footer {
-	background-color: @ivory-darker;
+	background-color: @gray-darker;
 }
 
 
