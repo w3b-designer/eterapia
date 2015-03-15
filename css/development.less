@@ -7,8 +7,19 @@
 General styles
 ----------------------------------------- */
 
+.breadcrumb {
+	background-color: transparent;
+	margin-bottom: 0.5em;
+}
 
+.breadcrumb > li+li:before {
+	content:"→"
+}
 
+strong {
+	margin: 5px 0 10px;
+	display: inline-block;
+}
 
 /* -----------------------------------------
 MAIN STYLES
@@ -18,10 +29,7 @@ html {
 }
 body {
 	color: #5f4b4c;
-	font-size: 13px;
-	font-size: 1.3rem;
-	line-height: 130%;
-	background-color: @gray-lighter;
+	background-color: @gray-light;
 }
 
 img {
@@ -29,20 +37,21 @@ img {
 }
 
 a {
-
+	color: @red;
 }
 
 h1 {
 	font-size: 27px;
 	font-size: 2.7rem;
-	font-weight: normal;
+	font-weight: bold;
 	margin: 0 0 5px;
 }
 
 h2 {
-	font-size: 13px;
-	text-transform: uppercase;
-	margin: 25px 0 5px;
+	font-size: 17px;
+	font-size: 1.7rem;
+	font-weight: normal;
+	margin: 0 0 15px;
 }
 
 h3 {
@@ -103,7 +112,7 @@ ul.reset {
 ----------------------------------------- */
 .navbar {
 	min-height: 0;
-	padding: 15px 0;
+	padding: 10px 0;
 	margin: 0;
 	background-color: @white;
 
@@ -114,6 +123,13 @@ ul.reset {
 			font-size: 1.5rem;
 		}
 	}
+
+	&-brand {
+		max-width: 200px;
+		height: auto;
+		padding: 5px 15px;
+	}
+
 }
 
 .navbar-footer {
@@ -164,7 +180,7 @@ ul.reset {
 	CONTENT STYLES
 ----------------------------------------- */
 .content {
-	padding: 2em 0;
+	padding: 1em 0;
 }
 
 
@@ -245,11 +261,26 @@ ul.reset {
 
 	&-detail {
 		.profile-heading {
-			background-color: @gray-light;
+			background-color: @white;
+			border: 1px solid @gray;
+
+			.profile-panel { 
+
+				margin: 20px 0;
+
+				.profile-title {
+					color: @light-red;
+					font-size: 12px;
+					font-size: 1.2rem;
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+			}
+
 		}
 
 		.profile-info {
-			background-color: @white;
+			background-color: @gray-lighter;
 
 			.profile-panel {
 				padding: 0 0 15px 25px;
@@ -265,7 +296,25 @@ ul.reset {
 				color: @orange;
 				font-size: 17px;
 				font-size: 1.7rem;
-				padding-bottom: 5px;
+				padding-bottom: 10px;
+			}
+		}
+
+		.section-title {
+			font-size: 17px;
+			font-size: 1.7rem;
+			font-weight: bold;
+			margin: 10px 0 5px;
+			display: block;
+		}
+
+		.reference {
+			font-style: italic;
+			margin-bottom:15px;
+
+			em {
+				opacity: 0.5;
+				display: block;
 			}
 		}
 	}
@@ -301,8 +350,14 @@ ul.reset {
 
 
 
-
-
+.bg-gray-light {
+	background-color: @gray-lighter;
+	margin-top: -15px;
+	padding-top: 15px;
+	-webkit-box-shadow: inset -3px 0px 3px 0px rgba(0,0,0,0.10);
+	-moz-box-shadow: inset -3px 0px 3px 0px rgba(0,0,0,0.10);
+	box-shadow: inset -3px 0px 3px 0px rgba(0,0,0,0.10);
+}
 
 .relative {
 	position: relative;

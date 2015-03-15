@@ -4,6 +4,17 @@
 /* -----------------------------------------
 General styles
 ----------------------------------------- */
+.breadcrumb {
+  background-color: transparent;
+  margin-bottom: 0.5em;
+}
+.breadcrumb > li + li:before {
+  content: "→";
+}
+strong {
+  margin: 5px 0 10px;
+  display: inline-block;
+}
 /* -----------------------------------------
 MAIN STYLES
 ----------------------------------------- */
@@ -12,24 +23,25 @@ html {
 }
 body {
   color: #5f4b4c;
-  font-size: 13px;
-  font-size: 1.3rem;
-  line-height: 130%;
   background-color: #eeeee8;
 }
 img {
   max-width: 100%;
 }
+a {
+  color: #b33529;
+}
 h1 {
   font-size: 27px;
   font-size: 2.7rem;
-  font-weight: normal;
+  font-weight: bold;
   margin: 0 0 5px;
 }
 h2 {
-  font-size: 13px;
-  text-transform: uppercase;
-  margin: 25px 0 5px;
+  font-size: 17px;
+  font-size: 1.7rem;
+  font-weight: normal;
+  margin: 0 0 15px;
 }
 h3 {
   font-size: 17px;
@@ -69,7 +81,7 @@ ul.reset li {
 ----------------------------------------- */
 .navbar {
   min-height: 0;
-  padding: 15px 0;
+  padding: 10px 0;
   margin: 0;
   background-color: #ffffff;
 }
@@ -77,6 +89,11 @@ ul.reset li {
   color: #df6153;
   font-size: 15px;
   font-size: 1.5rem;
+}
+.navbar-brand {
+  max-width: 200px;
+  height: auto;
+  padding: 5px 15px;
 }
 .navbar-footer {
   padding: 1.5em 0 3em;
@@ -107,7 +124,7 @@ ul.reset li {
 	CONTENT STYLES
 ----------------------------------------- */
 .content {
-  padding: 2em 0;
+  padding: 1em 0;
 }
 /* -----------------------------------------
 	FORM STYLES
@@ -133,7 +150,7 @@ ul.reset li {
 .profile-list .profile-item {
   margin-bottom: 1.5em;
   background-color: #fff;
-  border-bottom: 2px dotted #c8c8c0;
+  border-bottom: 2px dotted #eeeee8;
 }
 .profile-list .profile-photo img {
   max-width: 100%;
@@ -150,10 +167,21 @@ ul.reset li {
   padding: 1em 0;
 }
 .profile-detail .profile-heading {
-  background-color: #c8c8c0;
+  background-color: #ffffff;
+  border: 1px solid #c8c8c0;
+}
+.profile-detail .profile-heading .profile-panel {
+  margin: 20px 0;
+}
+.profile-detail .profile-heading .profile-panel .profile-title {
+  color: #df6153;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .profile-detail .profile-info {
-  background-color: #ffffff;
+  background-color: #f4f4f0;
 }
 .profile-detail .profile-info .profile-panel {
   padding: 0 0 15px 25px;
@@ -167,18 +195,41 @@ ul.reset li {
   color: #faa61a;
   font-size: 17px;
   font-size: 1.7rem;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+}
+.profile-detail .section-title {
+  font-size: 17px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  display: block;
+}
+.profile-detail .reference {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.profile-detail .reference em {
+  opacity: 0.5;
+  display: block;
 }
 /* -----------------------------------------
 	Footer STYLES
 ----------------------------------------- */
 .footer {
-  color: #c8c8c0;
+  color: #eeeee8;
   padding: 2em 0 4em;
   background-color: #3d3d39;
 }
 .footer a {
   color: #fff;
+}
+.bg-gray-light {
+  background-color: #f4f4f0;
+  margin-top: -15px;
+  padding-top: 15px;
+  -webkit-box-shadow: inset -3px 0px 3px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset -3px 0px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset -3px 0px 3px 0px rgba(0, 0, 0, 0.1);
 }
 .relative {
   position: relative;
