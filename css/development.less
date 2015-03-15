@@ -18,10 +18,14 @@ html {
 }
 body {
 	color: #5f4b4c;
-	font-size: 1.5rem;
-	font-size: 15px;
-	line-height: 150%;
-	background-color: @gray-light;
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height: 130%;
+	background-color: @gray-lighter;
+}
+
+img {
+	max-width: 100%;
 }
 
 a {
@@ -106,6 +110,8 @@ ul.reset {
 	&-nav {
 		a {
 			color: @light-red;
+			font-size: 15px;
+			font-size: 1.5rem;
 		}
 	}
 }
@@ -236,6 +242,33 @@ ul.reset {
 			padding: 1em 0;
 		}
 	}
+
+	&-detail {
+		.profile-heading {
+			background-color: @gray-light;
+		}
+
+		.profile-info {
+			background-color: @white;
+
+			.profile-panel {
+				padding: 0 0 15px 25px;
+				margin-bottom: 15px;
+				border-bottom: 2px dotted @gray-dark;
+
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+
+			.profile-title {
+				color: @orange;
+				font-size: 17px;
+				font-size: 1.7rem;
+				padding-bottom: 5px;
+			}
+		}
+	}
 }
 
 
@@ -292,6 +325,9 @@ ul.reset {
 .padding-on-sides {
 	padding-left: 15px;
 	padding-right: 15px;
+}
+.padding-all-sides {
+	padding: 15px;
 }
 .padding-on-left {
 	padding-left: 15px;

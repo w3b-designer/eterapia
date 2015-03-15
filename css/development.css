@@ -12,10 +12,13 @@ html {
 }
 body {
   color: #5f4b4c;
-  font-size: 1.5rem;
-  font-size: 15px;
-  line-height: 150%;
-  background-color: #c8c8c0;
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 130%;
+  background-color: #eeeee8;
+}
+img {
+  max-width: 100%;
 }
 h1 {
   font-size: 27px;
@@ -72,6 +75,8 @@ ul.reset li {
 }
 .navbar-nav a {
   color: #df6153;
+  font-size: 15px;
+  font-size: 1.5rem;
 }
 .navbar-footer {
   padding: 1.5em 0 3em;
@@ -144,6 +149,26 @@ ul.reset li {
 .profile-list .profile-box {
   padding: 1em 0;
 }
+.profile-detail .profile-heading {
+  background-color: #c8c8c0;
+}
+.profile-detail .profile-info {
+  background-color: #ffffff;
+}
+.profile-detail .profile-info .profile-panel {
+  padding: 0 0 15px 25px;
+  margin-bottom: 15px;
+  border-bottom: 2px dotted #888880;
+}
+.profile-detail .profile-info .profile-panel:last-child {
+  border-bottom: none;
+}
+.profile-detail .profile-info .profile-title {
+  color: #faa61a;
+  font-size: 17px;
+  font-size: 1.7rem;
+  padding-bottom: 5px;
+}
 /* -----------------------------------------
 	Footer STYLES
 ----------------------------------------- */
@@ -174,6 +199,9 @@ ul.reset li {
 .padding-on-sides {
   padding-left: 15px;
   padding-right: 15px;
+}
+.padding-all-sides {
+  padding: 15px;
 }
 .padding-on-left {
   padding-left: 15px;
