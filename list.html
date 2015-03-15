@@ -26,7 +26,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body class="list">
 
      <nav class="navbar">
         <div class="container">
@@ -41,34 +41,48 @@
              </div>
 
              <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
+                   <li><a href="#">o eterapii</a></li>
+                   <li><a href="#">ako to funguje</a></li>
+                   <li><a href="#">blog</a></li>
+                   <li><a href="#">diskusia</a></li>
                    <li>
-                      <a class="active" href="#"><span class="nav-ico"><img src="images/icons/svg/calendar.svg" alt=""></span>Kurzy</a>
-                   </li>
-                   <li>
-                      <a href="#"><span class="nav-ico"><img src="images/icons/svg/company.svg" alt=""></span>Klienti</a>
+                       <form role="search" class="navbar-form">
+                          <div class="input-group">
+                             <input type="text" class="form-control input-sm" placeholder="Zdajte hľadaný výraz">
+                             <span class="input-group-btn">
+                                <button class="btn btn-red btn-sm" type="button">
+                                  <span class="glyphicon glyphicon-search"></span>
+                               </button>
+                            </span>
+                         </div><!-- /input-group -->
+                      </form>
                    </li>
                 </ul>
             </div><!--/.navbar-collapse -->
-
-
-            <form role="search" class="navbar-form">
-               <div class="input-group">
-                  <input type="text" class="form-control input-sm" placeholder="Zdajte hľadaný výraz">
-                  <span class="input-group-btn">
-                     <button class="btn  btn-success btn-sm" type="button">
-                       <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                 </span>
-              </div><!-- /input-group -->
-           </form>
          </div><!--/.container -->
       </nav>
+
+      <div class="heading">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-9 col-sm-offset-1">
+                      <div class="heading-image"><img src="http://placehold.it/200x190/ffffff"></div>
+                      <div class="heading-title">
+                          Oddajte sa naplno svojim<br>pocitom a vyliečte svoju myseľ a dušu
+                      </div>
+                      <div class="heading-desc">
+                          Zažívajte procesy cesty s vybraným terapeutom
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
 
       <div class="selection">
           <div class="container">
               <div class="dropdown">
-                  <a data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                  <a class="dropdown-parent" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
                       Stupeň znalosti
                       <span class="caret"></span>
                   </a>
@@ -79,7 +93,7 @@
                   </ul>
               </div>
               <div class="dropdown">
-                  <a data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                  <a class="dropdown-parent" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
                       Kraj / Mesto
                       <span class="caret"></span>
                   </a>
@@ -93,7 +107,7 @@
                   </ul>
               </div>
               <div class="dropdown">
-                  <a data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                  <a class="dropdown-parent" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
                       Pohlavie
                       <span class="caret"></span>
                   </a>
@@ -104,7 +118,7 @@
                   </ul>
               </div>
               <div class="dropdown">
-                  <a data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                  <a class="dropdown-parent" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
                       Špecializácia
                       <span class="caret"></span>
                   </a>
@@ -149,7 +163,7 @@
                                                   Hodnotenie:
                                               </li>
                                           </ul>
-                                          <a class="btn btn-ivory-dark" href="#">pozri celý profil</a>
+                                          <a class="btn btn-gray-dark" href="#">pozri celý profil</a>
                                       </div>
                                   </div>
                               </div>
@@ -182,75 +196,7 @@
                                                   Hodnotenie:
                                               </li>
                                           </ul>
-                                          <a class="btn btn-ivory-dark" href="#">pozri celý profil</a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-sm-6">
-                          <div class="profile-item">
-                              <div class="row">
-                                  <div class="col-sm-4">
-                                      <div class="profile-photo">
-                                          <img src="#" alt="Meno Priezvisko" title="Meno Priezvisko">
-                                      </div>
-                                  </div>
-                                  <div class="col-sm-8">
-                                      <div class="profile-info">
-                                          <div class="profile-name">
-                                              Meno Priezvisko
-                                          </div>
-                                          <div class="profile-desc">
-                                              Lorem ipsum sil delore geta fredlo urisa mera dol simo.
-                                          </div>
-                                          <ul class="reset profile-box">
-                                              <li>
-                                                  Mesto: <strong>Bratislava</strong>
-                                              </li>
-                                              <li>
-                                                  Status: <strong>Terapeut metody Cesta</strong>
-                                              </li>
-                                              <li>
-                                                  Hodnotenie:
-                                              </li>
-                                          </ul>
-                                          <a class="btn btn-ivory-dark" href="#">pozri celý profil</a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-sm-6">
-                          <div class="profile-item">
-                              <div class="row">
-                                  <div class="col-sm-4">
-                                      <div class="profile-photo">
-                                          <img src="#" alt="Meno Priezvisko" title="Meno Priezvisko">
-                                      </div>
-                                  </div>
-                                  <div class="col-sm-8">
-                                      <div class="profile-info">
-                                          <div class="profile-name">
-                                              Meno Priezvisko
-                                          </div>
-                                          <div class="profile-desc">
-                                              Lorem ipsum sil delore geta fredlo urisa mera dol simo.
-                                          </div>
-                                          <ul class="reset profile-box">
-                                              <li>
-                                                  Mesto: <strong>Bratislava</strong>
-                                              </li>
-                                              <li>
-                                                  Status: <strong>Terapeut metody Cesta</strong>
-                                              </li>
-                                              <li>
-                                                  Hodnotenie:
-                                              </li>
-                                          </ul>
-                                          <a class="btn btn-ivory-dark" href="#">pozri celý profil</a>
+                                          <a class="btn btn-gray-dark" href="#">pozri celý profil</a>
                                       </div>
                                   </div>
                               </div>
@@ -285,7 +231,7 @@
                                                   Hodnotenie:
                                               </li>
                                           </ul>
-                                          <a class="btn btn-ivory-dark" href="#">pozri celý profil</a>
+                                          <a class="btn btn-gray-dark" href="#">pozri celý profil</a>
                                       </div>
                                   </div>
                               </div>
@@ -318,7 +264,75 @@
                                                   Hodnotenie:
                                               </li>
                                           </ul>
-                                          <a class="btn btn-ivory-dark" href="#">pozri celý profil</a>
+                                          <a class="btn btn-gray-dark" href="#">pozri celý profil</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <div class="profile-item">
+                              <div class="row">
+                                  <div class="col-sm-4">
+                                      <div class="profile-photo">
+                                          <img src="#" alt="Meno Priezvisko" title="Meno Priezvisko">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-8">
+                                      <div class="profile-info">
+                                          <div class="profile-name">
+                                              Meno Priezvisko
+                                          </div>
+                                          <div class="profile-desc">
+                                              Lorem ipsum sil delore geta fredlo urisa mera dol simo.
+                                          </div>
+                                          <ul class="reset profile-box">
+                                              <li>
+                                                  Mesto: <strong>Bratislava</strong>
+                                              </li>
+                                              <li>
+                                                  Status: <strong>Terapeut metody Cesta</strong>
+                                              </li>
+                                              <li>
+                                                  Hodnotenie:
+                                              </li>
+                                          </ul>
+                                          <a class="btn btn-gray-dark" href="#">pozri celý profil</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="profile-item">
+                              <div class="row">
+                                  <div class="col-sm-4">
+                                      <div class="profile-photo">
+                                          <img src="#" alt="Meno Priezvisko" title="Meno Priezvisko">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-8">
+                                      <div class="profile-info">
+                                          <div class="profile-name">
+                                              Meno Priezvisko
+                                          </div>
+                                          <div class="profile-desc">
+                                              Lorem ipsum sil delore geta fredlo urisa mera dol simo.
+                                          </div>
+                                          <ul class="reset profile-box">
+                                              <li>
+                                                  Mesto: <strong>Bratislava</strong>
+                                              </li>
+                                              <li>
+                                                  Status: <strong>Terapeut metody Cesta</strong>
+                                              </li>
+                                              <li>
+                                                  Hodnotenie:
+                                              </li>
+                                          </ul>
+                                          <a class="btn btn-gray-dark" href="#">pozri celý profil</a>
                                       </div>
                                   </div>
                               </div>

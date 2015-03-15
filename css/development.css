@@ -53,19 +53,51 @@ ul.reset li {
 /* -----------------------------------------
 	Buttons
 ----------------------------------------- */
-.btn-dark {
-  color: #fff;
+.btn-gray-dark {
+  color: #ffffff;
   background-color: #888880;
+}
+.btn-red {
+  color: #ffffff;
+  background-color: #df6153;
 }
 /* -----------------------------------------
 	Navbar STYLES
 ----------------------------------------- */
+.navbar {
+  min-height: 0;
+  padding: 15px 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+.navbar-nav a {
+  color: #df6153;
+}
 .navbar-footer {
   padding: 1.5em 0 3em;
 }
 /* -----------------------------------------
-HEADER STYLES
+	HEADER STYLES
 ----------------------------------------- */
+.heading {
+  padding: 40px;
+}
+.heading-image {
+  margin-left: 30px;
+  float: right;
+}
+.heading-title {
+  font-size: 29px;
+  font-size: 2.9rem;
+  line-height: 110%;
+  text-align: right;
+  padding-bottom: 10px;
+  margin: 50px 0 10px;
+  border-bottom: 4px solid #b33529;
+}
+.heading-desc {
+  text-align: right;
+}
 /* -----------------------------------------
 	CONTENT STYLES
 ----------------------------------------- */
@@ -80,6 +112,15 @@ HEADER STYLES
 ----------------------------------------- */
 .selection {
   background-color: #b33529;
+}
+.selection .dropdown {
+  display: inline-block;
+  margin: 0 25px 0 0;
+}
+.selection .dropdown-parent {
+  color: #fff;
+  padding: 15px 0;
+  display: block;
 }
 /* -----------------------------------------
 	Profile
@@ -107,7 +148,12 @@ HEADER STYLES
 	Footer STYLES
 ----------------------------------------- */
 .footer {
+  color: #c8c8c0;
+  padding: 2em 0 4em;
   background-color: #3d3d39;
+}
+.footer a {
+  color: #fff;
 }
 .relative {
   position: relative;
