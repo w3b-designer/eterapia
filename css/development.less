@@ -7,6 +7,12 @@
 	General styles
 ----------------------------------------- */
 
+.panel {
+	margin: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+
 .breadcrumb {
 	background-color: transparent;
 	margin-bottom: 0.5em;
@@ -149,24 +155,23 @@ ul.reset {
 	HEADER STYLES
 ----------------------------------------- */
 .heading {
-	padding: 40px;
-
-	&-image {
-		margin-left: 30px;
-		float: right;
-	}
+	padding: 90px 0 90px;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	&-title {
-		font-size: 29px;
-		font-size: 2.9rem;
+		color: @gray-darker;
+		font-size: 39px;
+		font-size: 3.9rem;
 		line-height: 110%;
 		text-align: right;
-		padding-bottom: 10px;
-		margin: 50px 0 10px;
-		border-bottom: 4px solid @red;
 	}
 
 	&-desc {
+		color: @gray-darker;
+		font-size: 31px;
+		font-size: 3.1rem;
+		line-height: 110%;
 		text-align: right;
 	}
 }
@@ -375,6 +380,18 @@ ul.reset {
 
 
 
+/* -----------------------------------------
+	About us
+----------------------------------------- */
+.whois-title {
+	font-size: 27px;
+	font-size: 2.7rem;
+	font-weight: bold;
+}
+
+
+
+
 
 /* -----------------------------------------
 	Rating
@@ -484,6 +501,10 @@ ul.reset {
 	padding-top: 0;
 }
 .no-padding-on-bottom {
+	padding-bottom: 0;
+}
+.no-padding-top-bottom {
+	padding-top: 0;
 	padding-bottom: 0;
 }
 .no-padding-on-sides {
