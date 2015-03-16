@@ -4,7 +4,7 @@
 
 
 /* -----------------------------------------
-General styles
+	General styles
 ----------------------------------------- */
 
 .breadcrumb {
@@ -16,13 +16,16 @@ General styles
 	content:"→"
 }
 
-strong {
-	margin: 5px 0 10px;
-	display: inline-block;
-}
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+///// TOTO SOM TI ZAKOMENTOVAL!!!! NEVIEM KDE SI TO CHCEL POUZIT ALE HODNE NEBEZPACNE PRAVIDLO ;) ////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+// strong {
+// 	margin: 5px 0 10px;
+// 	display: inline-block;
+// }
 
 /* -----------------------------------------
-MAIN STYLES
+	MAIN STYLES
 ----------------------------------------- */
 html {
 	background-color: @gray-darker;
@@ -264,7 +267,7 @@ ul.reset {
 			background-color: @white;
 			border: 1px solid @gray;
 
-			.profile-panel { 
+			.profile-panel {
 
 				margin: 20px 0;
 
@@ -323,10 +326,77 @@ ul.reset {
 
 
 
+/* -----------------------------------------
+	Sidebar styles
+----------------------------------------- */
+.sidebar {
+	&-item {
+		background-color: @white;
+	}
+
+	&-title {
+		color: @white;
+		text-transform: uppercase;
+		padding: 5px 10px;
+
+		&.title-orange {
+			background-color: @orange
+		}
+	}
+
+	&-list {
+		margin: 5px 10px;
+
+		li {
+			padding: 5px 0 !important;
+			border-bottom: 1px solid #EEE;
+		}
+
+		.profile-photo {
+			margin: 4px 10px 0 0;
+			float: left;
+		}
+
+		.profile-name {
+			font-weight: bold;
+		}
+
+		.profile-panel {
+			margin-bottom: 7px;
+			overflow: hidden;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
 
 
 
 
+
+/* -----------------------------------------
+	Rating
+----------------------------------------- */
+.rating {
+	font-size: 16px;
+	float: left;
+	unicode-bidi: bidi-override;
+	direction: rtl;
+
+	& > span {
+		display: inline-block;
+		position: relative;
+		width: 1.1em;
+
+		&:hover:before, &:hover ~ span:before, &.active:before {
+			color: @orange;
+			content: "\2605";
+			position: absolute;
+		}
+	}
+}
 
 
 

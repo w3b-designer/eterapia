@@ -2,7 +2,7 @@
    Mixins
 ----------------------------------------- */
 /* -----------------------------------------
-General styles
+	General styles
 ----------------------------------------- */
 .breadcrumb {
   background-color: transparent;
@@ -11,12 +11,8 @@ General styles
 .breadcrumb > li + li:before {
   content: "→";
 }
-strong {
-  margin: 5px 0 10px;
-  display: inline-block;
-}
 /* -----------------------------------------
-MAIN STYLES
+	MAIN STYLES
 ----------------------------------------- */
 html {
   background-color: #3d3d39;
@@ -211,6 +207,62 @@ ul.reset li {
 .profile-detail .reference em {
   opacity: 0.5;
   display: block;
+}
+/* -----------------------------------------
+	Sidebar styles
+----------------------------------------- */
+.sidebar-item {
+  background-color: #ffffff;
+}
+.sidebar-title {
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+.sidebar-title.title-orange {
+  background-color: #faa61a;
+}
+.sidebar-list {
+  margin: 5px 10px;
+}
+.sidebar-list li {
+  padding: 5px 0 !important;
+  border-bottom: 1px solid #EEE;
+}
+.sidebar-list .profile-photo {
+  margin: 4px 10px 0 0;
+  float: left;
+}
+.sidebar-list .profile-name {
+  font-weight: bold;
+}
+.sidebar-list .profile-panel {
+  margin-bottom: 7px;
+  overflow: hidden;
+}
+.sidebar-list .profile-panel:last-child {
+  margin-bottom: 0;
+}
+/* -----------------------------------------
+	Rating
+----------------------------------------- */
+.rating {
+  font-size: 16px;
+  float: left;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before,
+.rating > span.active:before {
+  color: #faa61a;
+  content: "\2605";
+  position: absolute;
 }
 /* -----------------------------------------
 	Footer STYLES
