@@ -48,6 +48,14 @@ h2 {
   font-weight: normal;
   margin: 0 0 15px;
 }
+.info-page h2 {
+  font-size: 21px;
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+.info-page h2 span {
+  font-weight: normal;
+}
 h3 {
   font-size: 17px;
   margin: 5px 0 15px;
@@ -127,6 +135,15 @@ hr {
 ----------------------------------------- */
 .content {
   padding: 1em 0;
+}
+/* -----------------------------------------
+	PANEL STYLES
+----------------------------------------- */
+.page-panel {
+  padding: 3em 0;
+}
+.page-panel.panel-white {
+  background-color: #ffffff;
 }
 /* -----------------------------------------
 	FORM STYLES
@@ -343,14 +360,6 @@ hr {
 }
 .sidebar-list .profile-panel:last-child {
   margin-bottom: 0;
-}
-/* -----------------------------------------
-	About us
------------------------------------------ */
-.whois-title {
-  font-size: 27px;
-  font-size: 2.7rem;
-  font-weight: bold;
 }
 /* -----------------------------------------
 	Rating
