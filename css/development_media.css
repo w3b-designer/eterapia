@@ -1,3 +1,43 @@
 /* -----------------------------------------
    Mixins
 ----------------------------------------- */
+@media (min-width: 768px) {
+  /* -----------------------------------------
+		MAIN STYLES
+	----------------------------------------- */
+  h1 {
+    font-size: 27px;
+    font-size: 2.7rem;
+  }
+  .profile-detail .profile-heading .profile-photo {
+    max-width: 120px;
+  }
+  /* -----------------------------------------
+		HOMEPAGE
+	----------------------------------------- */
+  .heading {
+    padding: 45px 0 60px;
+  }
+  .heading-title {
+    font-size: 34px;
+    font-size: 3.4rem;
+  }
+  .heading-desc {
+    font-size: 17px;
+    font-size: 1.7rem;
+  }
+  .heading .actions {
+    margin-top: 30px;
+  }
+  .heading .actions a {
+    font-size: 17px;
+    margin-left: 15px;
+    position: relative;
+    top: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .profile-detail .profile-heading .profile-photo {
+    max-width: 160px;
+  }
+}
