@@ -9,15 +9,16 @@
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
 
-    <title></title>
+    <title>eTerapia.sk | Portál pre výmenu liečebno-transformačných procesov metódy CESTA</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/development.css" rel="stylesheet">
+    <link href="css/development_media.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,7 +27,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body class="">
 
      <nav class="navbar">
         <div class="container">
@@ -37,41 +38,37 @@
                    <span class="icon-bar"></span>
                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><span class="logo-symbol">[|]</span>eduoffice</a>
+                <a class="navbar-brand" href="index.html"><img src="images/logo_etarapia.png"></a>
              </div>
 
              <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
+                   <li><a href="#">Terapeuti</a></li>
+                   <li><a href="#">Ako to funguje</a></li>
+                   <li><a href="#">O eterapii</a></li>
+                   <li><a href="#">Kontakt</a></li>
                    <li>
-                      <a class="active" href="#"><span class="nav-ico"><img src="images/icons/svg/calendar.svg" alt=""></span>Kurzy</a>
-                   </li>
-                   <li>
-                      <a href="#"><span class="nav-ico"><img src="images/icons/svg/company.svg" alt=""></span>Klienti</a>
+                       <form role="search" class="navbar-form">
+                          <div class="input-group">
+                             <input type="text" class="form-control input-sm" placeholder="Zdajte hľadaný výraz">
+                             <span class="input-group-btn">
+                                <button class="btn btn-red btn-sm" type="button">
+                                  <span class="glyphicon glyphicon-search"></span>
+                               </button>
+                            </span>
+                         </div><!-- /input-group -->
+                      </form>
                    </li>
                 </ul>
-
-                <form role="search" class="navbar-form navbar-right">
-                   <div class="input-group">
-                      <input type="text" class="form-control input-sm" placeholder="Zdajte hľadaný výraz">
-                      <span class="input-group-btn">
-                         <button class="btn  btn-success btn-sm" type="button">
-                           <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                     </span>
-                  </div><!-- /input-group -->
-               </form>
             </div><!--/.navbar-collapse -->
          </div><!--/.container -->
       </nav>
 
-
       <div class="content">
          <div class="container">
             <h1>Zoznam stránok</h1>
-
-            <a href="kurzy.html">Kurzy</a><br>
-            <a href="kurzy_tabs.html">Kurzy taby</a><br>
-            <a href="kurz_detail.html">Detail kurzu</a>
+            <a href="homepage.html">Homepage</a><br>
+            <a href="detail.html">Profil terapeuta</a><br>
          </div>
       </div>
 
