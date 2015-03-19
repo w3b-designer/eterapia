@@ -134,7 +134,7 @@ hr {
 	CONTENT STYLES
 ----------------------------------------- */
 .content {
-  padding: 1em 0;
+  padding: 1em 0 0;
 }
 /* -----------------------------------------
 	PANEL STYLES
@@ -151,35 +151,75 @@ hr {
 /* -----------------------------------------
 	HOMEPAGE
 ----------------------------------------- */
-.heading {
+.homepage .heading {
   padding: 30px 0 30px;
   background: url("../images/head_hp.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
 }
-.heading-title {
+.homepage .heading-title {
   font-size: 24px;
   font-size: 2.4rem;
   line-height: 110%;
 }
-.heading-desc {
+.homepage .heading-desc {
   color: #888880;
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 110%;
   margin-top: 5px;
 }
-.heading .actions {
+.homepage .heading .actions {
   margin-top: 15px;
 }
-.heading .actions button {
+.homepage .heading .actions button {
   font-size: 1.4rem;
   font-size: 14px;
 }
-.heading .actions a {
+.homepage .heading .actions a {
   font-size: 1.4rem;
   font-size: 14px;
   margin-left: 15px;
   position: relative;
   top: 10px;
+}
+.homepage h3 {
+  font-size: 27px;
+  font-size: 2.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+.homepage .section-references {
+  color: #ffffff;
+  background-color: #b33529;
+  padding: 45px 0 60px;
+}
+.homepage .section-references .text {
+  font-size: 27px;
+  font-size: 2.7rem;
+  line-height: 120%;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+.homepage .section-references .author {
+  font-weight: bold;
+}
+.homepage .section-references .author-photo {
+  max-width: 160px;
+}
+.homepage .section-references .author-photo img {
+  border-radius: 50%;
+}
+.homepage .section-media {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+.homepage .section-media .media {
+  height: 120px;
+  width: 200px;
+}
+.homepage .section-media .media img {
+  max-width: 160px;
 }
 /* -----------------------------------------
 	LIST

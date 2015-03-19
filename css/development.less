@@ -199,7 +199,7 @@ hr {
 	CONTENT STYLES
 ----------------------------------------- */
 .content {
-	padding: 1em 0;
+	padding: 1em 0 0;
 }
 
 
@@ -238,44 +238,96 @@ hr {
 /* -----------------------------------------
 	HOMEPAGE
 ----------------------------------------- */
+.homepage {
 
-.heading {
-	padding: 30px 0 30px;
-	background: url("../images/head_hp.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
+	.heading {
+		padding: 30px 0 30px;
+		background: url("../images/head_hp.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
 
-	&-title {
+		&-title {
 
-		font-size: 24px;
-		font-size: 2.4rem;
-		line-height: 110%;
-	}
-
-	&-desc {
-		color: @gray-dark;
-		font-size: 14px;
-		font-size: 1.4rem;
-		line-height: 110%;
-		margin-top: 5px;
-	}
-
-	.actions {
-		margin-top: 15px;
-
-		button {
-			font-size: 1.4rem;
-			font-size: 14px;
+			font-size: 24px;
+			font-size: 2.4rem;
+			line-height: 110%;
 		}
 
-		a {
-			font-size: 1.4rem;
+		&-desc {
+			color: @gray-dark;
 			font-size: 14px;
-			margin-left: 15px;
-			position: relative;
-			top: 10px;
+			font-size: 1.4rem;
+			line-height: 110%;
+			margin-top: 5px;
+		}
+
+		.actions {
+			margin-top: 15px;
+
+			button {
+				font-size: 1.4rem;
+				font-size: 14px;
+			}
+
+			a {
+				font-size: 1.4rem;
+				font-size: 14px;
+				margin-left: 15px;
+				position: relative;
+				top: 10px;
+			}
+		}
+	}
+
+	h3 {
+		font-size: 27px;
+		font-size: 2.7rem;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.section-references {
+		color: @white;
+		background-color: @red;
+		padding: 45px 0 60px;
+
+		.text {
+			font-size: 27px;
+			font-size: 2.7rem;
+			line-height: 120%;
+			font-weight: 300;
+			font-style:  italic;
+			margin-bottom: 15px;
+			padding-top: 10px;
+		}
+
+		.author {
+			font-weight: bold;
+		
+			&-photo {
+				
+				max-width: 160px;
+				
+				img {
+					border-radius: 50%;
+				}
+			}
+		}	
+	}
+
+	.section-media {
+		background-color: @white;
+		padding: 60px 0;
+
+		.media {
+			height: 120px;
+			width: 200px;	
+
+			img {
+				max-width: 160px;	
+
+			}
 		}
 	}
 }
-
 
 /* -----------------------------------------
 	LIST
