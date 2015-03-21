@@ -23,7 +23,7 @@ html {
   background-color: #3d3d39;
 }
 body {
-  color: #5f4b4c;
+  color: #4b3a2d;
   background-color: #eeeee8;
 }
 img {
@@ -110,14 +110,18 @@ hr {
   border-bottom: 1px solid #c8c8c0;
 }
 .navbar-nav a {
-  color: #df6153;
+  color: #4b3a2d;
   font-size: 15px;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 .navbar-nav a:hover,
 .navbar-nav a:focus {
   color: #b33529;
   background-color: transparent !important;
+}
+.navbar-nav button {
+  margin-top: 9px;
 }
 .navbar-brand {
   max-width: 200px;
@@ -152,20 +156,20 @@ hr {
 	HOMEPAGE
 ----------------------------------------- */
 .homepage .heading {
-  padding: 30px 0 30px;
+  padding: 50px 0 50px;
   background: url("../images/head_hp.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
 }
 .homepage .heading-title {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 31px;
+  font-size: 3.1frem;
   line-height: 110%;
 }
 .homepage .heading-desc {
   color: #888880;
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 17px;
+  font-size: 1.7rem;
   line-height: 110%;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .homepage .heading .actions {
   margin-top: 15px;
@@ -188,8 +192,8 @@ hr {
   text-align: center;
 }
 .homepage .section-references {
-  color: #ffffff;
-  background-color: #b33529;
+  color: #4b3a2d;
+  background-color: #e2ddda;
   padding: 45px 0 60px;
 }
 .homepage .section-references .text {
@@ -199,7 +203,7 @@ hr {
   font-weight: 300;
   font-style: italic;
   margin-bottom: 15px;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 .homepage .section-references .author {
   font-weight: bold;
@@ -225,14 +229,14 @@ hr {
 	LIST
 ----------------------------------------- */
 .selection {
-  background-color: #b33529;
+  background-color: #e2ddda;
 }
 .selection .dropdown {
   display: inline-block;
   margin: 0 25px 0 0;
 }
 .selection .dropdown-parent {
-  color: #fff;
+  color: #4b3a2d;
   padding: 15px 0;
   display: block;
 }
@@ -261,6 +265,9 @@ hr {
   font-size: 2.1rem;
   font-weight: bold;
 }
+.profile-list .profile-name a {
+  color: #4b3a2d !important;
+}
 .profile-list .profile-box {
   padding: 1em 0;
 }
@@ -268,7 +275,6 @@ hr {
   margin: 0 0 0;
 }
 .profile-list .profile-panel .profile-title {
-  color: #df6153;
   font-size: 12px;
   font-size: 1.2rem;
   font-weight: normal;
@@ -290,7 +296,6 @@ hr {
   margin: 0 0 5px;
 }
 .profile-detail .profile-heading .profile-panel .profile-title {
-  color: #df6153;
   font-size: 12px;
   font-size: 1.2rem;
   font-weight: normal;
@@ -406,7 +411,6 @@ hr {
 ----------------------------------------- */
 .rating {
   font-size: 14px;
-  float: left;
   unicode-bidi: bidi-override;
   direction: rtl;
 }
@@ -426,12 +430,16 @@ hr {
 	Footer STYLES
 ----------------------------------------- */
 .footer {
-  color: #eeeee8;
+  color: #4b3a2d;
   padding: 2em 0 4em;
-  background-color: #3d3d39;
+  background-color: #e2ddda;
 }
 .footer a {
-  color: #fff;
+  color: #4b3a2d;
+  font-weight: bold;
+}
+.footer ul.reset li {
+  padding: 0;
 }
 .bg-gray-light {
   background-color: #f4f4f0;

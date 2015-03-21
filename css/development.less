@@ -37,7 +37,7 @@ html {
 	background-color: @gray-darker;
 }
 body {
-	color: #5f4b4c;
+	color: @text-color;
 	background-color: @gray-light;
 }
 
@@ -153,15 +153,20 @@ hr {
 
 	&-nav {
 		a {
-			color: @light-red;
+			color: #4b3a2d;
 			font-size: 15px;
 			font-size: 1.5rem;
+			font-weight: bold;
 
 			&:hover, &:focus {
 				color: @red;
 				background-color: transparent !important;
 
 			}
+		}
+
+		button {
+			margin-top: 9px;
 		}
 	}
 
@@ -241,22 +246,22 @@ hr {
 .homepage {
 
 	.heading {
-		padding: 30px 0 30px;
+		padding: 50px 0 50px;
 		background: url("../images/head_hp.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
 
 		&-title {
 
-			font-size: 24px;
-			font-size: 2.4rem;
+			font-size: 31px;
+			font-size: 3.1frem;
 			line-height: 110%;
 		}
 
 		&-desc {
 			color: @gray-dark;
-			font-size: 14px;
-			font-size: 1.4rem;
+			font-size: 17px;
+			font-size: 1.7rem;
 			line-height: 110%;
-			margin-top: 5px;
+			margin-top: 10px;
 		}
 
 		.actions {
@@ -285,8 +290,8 @@ hr {
 	}
 
 	.section-references {
-		color: @white;
-		background-color: @red;
+		color: @text-color;
+		background-color: @light-brown;
 		padding: 45px 0 60px;
 
 		.text {
@@ -296,7 +301,7 @@ hr {
 			font-weight: 300;
 			font-style:  italic;
 			margin-bottom: 15px;
-			padding-top: 10px;
+			padding-top: 30px;
 		}
 
 		.author {
@@ -333,14 +338,14 @@ hr {
 	LIST
 ----------------------------------------- */
 .selection {
-	background-color: @red;
+	background-color: rgb(226,221,218);
 
 	.dropdown {
 		display: inline-block;
 		margin: 0 25px 0 0;
 
 		&-parent {
-			color: #fff;
+			color: @text-color;
 			padding: 15px 0;
 			display: block;
 		}
@@ -387,6 +392,10 @@ hr {
 			font-size: 21px;
 			font-size: 2.1rem;
 			font-weight: bold;
+
+			a {
+				color: @text-color !important;
+			}
 		}
 
 		.profile-box {
@@ -398,7 +407,7 @@ hr {
 			margin: 0 0 0;
 
 			.profile-title {
-				color: @light-red;
+				
 				font-size: 12px;
 				font-size: 1.2rem;
 				font-weight: normal;
@@ -428,7 +437,7 @@ hr {
 				margin: 0 0 5px;
 
 				.profile-title {
-					color: @light-red;
+					// color: @light-red;
 					font-size: 12px;
 					font-size: 1.2rem;
 					font-weight: normal;
@@ -588,7 +597,7 @@ hr {
 ----------------------------------------- */
 .rating {
 	font-size: 14px;
-	float: left;
+	// float: left;
 	unicode-bidi: bidi-override;
 	direction: rtl;
 
@@ -613,12 +622,17 @@ hr {
 	Footer STYLES
 ----------------------------------------- */
 .footer {
-	color: @gray-light;
+	color: @text-color;
 	padding: 2em 0 4em;
-	background-color: @gray-darker;
+	background-color: @light-brown;
 
 	a {
-		color: #fff;
+		color: @text-color;
+		font-weight: bold;
+	}
+
+	ul.reset li {
+		padding: 0;
 	}
 }
 
