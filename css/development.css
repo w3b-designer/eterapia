@@ -299,7 +299,7 @@ hr {
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
 }
 .profile-detail .profile-heading {
-  background-color: #ffffff;
+  background-color: #f4f4f0;
 }
 .profile-detail .profile-heading .profile-panel {
   margin: 0 0 5px;
@@ -313,11 +313,6 @@ hr {
 }
 .profile-detail .profile-heading .profile-panel .profile-title:after {
   content: ':';
-}
-.profile-detail .profile-heading .profile-photo {
-  max-width: 60px;
-  margin-right: 15px;
-  float: left;
 }
 .profile-detail .profile-heading .about {
   margin-top: 15px;
@@ -336,21 +331,39 @@ hr {
   opacity: 0.2;
 }
 .profile-detail .profile-info {
-  background-color: #f4f4f0;
+  background-color: #ffffff;
+  padding: 15px;
 }
 .profile-detail .profile-info .profile-panel {
-  padding: 0 0 15px 25px;
   margin-bottom: 15px;
+  padding-bottom: 15px;
   border-bottom: 2px dotted #888880;
 }
 .profile-detail .profile-info .profile-panel:last-child {
   border-bottom: none;
+}
+.profile-detail .profile-info .profile-panel ul.reference-arrow {
+  list-style-type: none;
+  padding-left: 0;
+}
+.profile-detail .profile-info .profile-panel ul.reference-arrow li {
+  margin-bottom: 25px;
+}
+.profile-detail .profile-info .profile-panel ul.reference-arrow li em {
+  display: block;
+  margin-top: 5px;
+}
+.profile-detail .profile-info .profile-panel ul.reference-arrow li:before {
+  content: "\00BB";
 }
 .profile-detail .profile-info .profile-title {
   color: #faa61a;
   font-size: 17px;
   font-size: 1.7rem;
   padding-bottom: 10px;
+}
+.profile-detail .profile-info .profile-title .glyphicon {
+  color: #4b3a2d;
 }
 .profile-detail .section-title {
   font-size: 21px;
@@ -395,7 +408,6 @@ hr {
   max-height: 50px;
   margin: 4px 10px 0 0;
   float: left;
-  border-radius: 50%;
 }
 .sidebar-list .profile-name {
   line-height: 1.25;
@@ -418,29 +430,32 @@ hr {
 /* -----------------------------------------
 	O nas
 ----------------------------------------- */
-.vision h1 {
-  padding: 0 30px;
+.vision .title {
   text-align: center;
-}
-.vision .separator75 {
-  display: block;
   border-bottom: 2px dotted #c8c8c0;
-  width: 75%;
-  text-align: center;
   margin: 0 auto;
 }
-.vision .separator25 {
-  display: block;
-  border-bottom: 2px dotted #c8c8c0;
-  width: 25%;
-  text-align: center;
-  margin: 0 auto 30px;
+.vision .title.w75 {
+  width: 75%;
+}
+.vision .title.w50 {
+  width: 50%;
+}
+.vision .title h1,
+.vision .title img {
+  display: inline-block;
+  position: relative;
+  top: 18px;
+  background: #eeeee8;
+  padding: 0 30px;
 }
 .vision img.vision-pic {
   display: block;
-  margin: 30px auto 0;
+  margin: 0 auto;
   max-width: 160px;
   max-height: 100px;
+  position: relative;
+  top: 40px;
 }
 /* -----------------------------------------
 	Rating
@@ -481,6 +496,11 @@ hr {
   background-color: #f4f4f0;
   padding: 15px 15px 0;
   margin: -15px;
+}
+p.lg-text {
+  font-size: 1.7rem;
+  font-size: 17px;
+  font-weight: bold;
 }
 .relative {
   position: relative;
