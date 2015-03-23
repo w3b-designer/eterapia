@@ -156,6 +156,9 @@ hr {
 /* -----------------------------------------
 	FORM STYLES
 ----------------------------------------- */
+.form-group label.required::after {
+  content: " *";
+}
 /* -----------------------------------------
 	HOMEPAGE
 ----------------------------------------- */
@@ -492,6 +495,11 @@ hr {
 }
 .footer ul.reset li {
   padding: 0;
+}
+.bg-white {
+  background-color: #ffffff;
+  padding: 15px 15px 0;
+  margin: -15px;
 }
 .bg-gray-light {
   background-color: #f4f4f0;

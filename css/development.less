@@ -233,7 +233,9 @@ hr {
 	FORM STYLES
 ----------------------------------------- */
 
-
+.form-group label.required::after {
+    content: " *";
+}
 
 
 
@@ -696,6 +698,11 @@ hr {
 	}
 }
 
+.bg-white {
+	background-color: @white;
+	padding: 15px 15px 0;
+	margin: -15px;
+}
 
 .bg-gray-light {
 	background-color: @gray-lighter;

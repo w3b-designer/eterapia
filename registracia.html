@@ -49,128 +49,180 @@
                    <li><a href="#">Kontakt</a></li>
                    <li><a href="#">Prihlásenie</a></li>
                    <li><button class="btn btn-sm btn-red navbutton" type="submit">Zobraziť terapeutov</button></li>
-
-                   
-<!--                    <li>
-                       <form role="search" class="navbar-form">
-                          <div class="input-group">
-                             <input type="text" class="form-control input-sm" placeholder="Zdajte hľadaný výraz">
-                             <span class="input-group-btn">
-                                <button class="btn btn-red btn-sm" type="button">
-                                  <span class="glyphicon glyphicon-search"></span>
-                               </button>
-                            </span>
-                         </div>
-                      </form>
-                   </li>  -->
-
                 </ul>
             </div><!--/.navbar-collapse -->
          </div><!--/.container -->
       </nav>
 
 
-
-
-
-
       <div class="content no-padding-top-bottom"><br><br><br>
           <div class="container">
-              <h1>Registrácia nového užívateľa</h1>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+              <div class="bg-white margin-on-bottom">
+                  <h1>Registrácia nového užívateľa</h1>
+                  <h3 class="large-margin-on-top">Vyplňte údaje potrebné k Vašej registrácii</h3>
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" class="required" title="E-mail je povinná položka">E-mail</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Zadajte e-mailovú adresu">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="required">Heslo</label>
+                        <input type="password" class="form-control" placeholder="Zadajte heslo"> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="control-label sr-only">Zopakujte heslo</label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Zadajte heslo znovu"> 
+                    </div>
+                  </form>
+
+                  <h3 class="large-margin-on-top">Vyplňte údaje potrebné k vytvoreniu Vášmu profilu</h3>
+                    <div class="form-group">
+                      <label for="exampleInputFile">Profilová fotka</label>
+                      <input type="file" id="exampleInputFile">
+                      <p class="help-block">Zvolte si peknu fotku->Help textik</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputGender" class="control-label">Pohlavie</label>
+
+                            <select class="form-control">
+                                <option value="">Zvoľte možnosť</option>
+                                <option value="">Muž</option>
+                                <option value="">Žena</option>
+                            </select>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputAppointment" class="control-label">Dostupnosť</label>
+                        <div class="">
+                            <div class="checkbox">
+                                <label for="inputAppointmentSkype">
+                                    <input type="checkbox" id="inputAppointmentSkype"> Skype
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="inputAppointmentSkype">
+                                    <input type="checkbox" id="inputAppointmentSkype"> Tel
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="inputAppointmentSkype">
+                                    <input type="checkbox" id="inputAppointmentSkype"> Osobne
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputAbout" class="control-label">O mne</label>
+                        <div class="">
+                            <textarea class="form-control" id="inputAbout" rows="5" placeholder="Napiste kratky, ale pekny text"></textarea>
+                        </div>
+                    </div>
+<button type="submit" class="btn btn-red margin-on-bottom">Vytvorit profil</button>
+
+                    
+                  </form>
+
+                  <!-- <form class="" action="" method="post">
+                      <div class="page-panel">
+                          
+                                      <div class="form-group">
+                                          <label for="inputUsername" class="col-sm-4 control-label">Používateľské meno</label>
+                                          <div class="col-sm-4">
+                                              <input type="email" class="form-control" id="inputUsername" placeholder="Zadajte používateľské meno">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="inputEmail" class="col-sm-4 control-label">E-mail</label>
+                                          <div class="col-sm-4">
+                                              <input type="email" class="form-control" id="inputEmail" placeholder="Zadajte e-mail">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="inputPassword" class="col-sm-4 control-label">Heslo</label>
+                                          <div class="col-sm-4">
+                                              <input type="password" class="form-control" id="inputPassword" placeholder="Zadajte heslo">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="inputPasswordConfirm" class="col-sm-4 control-label">Opakujte heslo</label>
+                                          <div class="col-sm-4">
+                                              <input type="password" class="form-control" id="inputPasswordConfirm" placeholder="Zadajte heslo znovu">
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="page-panel panel-white">
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col-sm-9 col-sm-offset-1">
+                                      <div class="form-group">
+                                          <label for="inputName" class="col-sm-4 control-label">Meno</label>
+                                          <div class="col-sm-4">
+                                              <input type="text" class="form-control" id="inputName" placeholder="Zadajte meno">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="inputSurname" class="col-sm-4 control-label">Priezvisko</label>
+                                          <div class="col-sm-4">
+                                              <input type="text" class="form-control" id="inputSurname" placeholder="Zadajte priezvisko">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="inputGender" class="col-sm-4 control-label">Pohlavie</label>
+                                          <div class="col-sm-4">
+                                              <select class="form-control">
+                                                  <option value="">Zvoľte možnosť</option>
+                                                  <option value="">Muž</option>
+                                                  <option value="">Žena</option>
+                                              </select>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="inputAppointment" class="col-sm-4 control-label">Dostupnosť</label>
+                                          <div class="col-sm-4">
+                                              <div class="checkbox">
+                                                  <label for="inputAppointmentSkype">
+                                                      <input type="checkbox" id="inputAppointmentSkype"> Skype
+                                                  </label>
+                                              </div>
+                                              <div class="checkbox">
+                                                  <label for="inputAppointmentSkype">
+                                                      <input type="checkbox" id="inputAppointmentSkype"> Tel
+                                                  </label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="inputAbout" class="col-sm-4 control-label">O mne</label>
+                                          <div class="col-sm-8">
+                                              <textarea class="form-control" id="inputAbout" rows="5"></textarea>
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group padding-on-top">
+                                          <div class="col-sm-offset-4 col-sm-8">
+                                              <button type="submit" class="btn btn-success">Registrovať</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </form> -->
+                </div>
+              </div>
+            </div>
           </div>
-
-          <form class="form-horizontal" action="" method="post">
-              <div class="page-panel">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-sm-9 col-sm-offset-1">
-                              <div class="form-group">
-                                  <label for="inputUsername" class="col-sm-4 control-label">Používateľské meno</label>
-                                  <div class="col-sm-4">
-                                      <input type="email" class="form-control" id="inputUsername" placeholder="Zadajte používateľské meno">
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                  <label for="inputEmail" class="col-sm-4 control-label">E-mail</label>
-                                  <div class="col-sm-4">
-                                      <input type="email" class="form-control" id="inputEmail" placeholder="Zadajte e-mail">
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                  <label for="inputPassword" class="col-sm-4 control-label">Heslo</label>
-                                  <div class="col-sm-4">
-                                      <input type="password" class="form-control" id="inputPassword" placeholder="Zadajte heslo">
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                  <label for="inputPasswordConfirm" class="col-sm-4 control-label">Opakujte heslo</label>
-                                  <div class="col-sm-4">
-                                      <input type="password" class="form-control" id="inputPasswordConfirm" placeholder="Zadajte heslo znovu">
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="page-panel panel-white">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-sm-9 col-sm-offset-1">
-                              <div class="form-group">
-                                  <label for="inputName" class="col-sm-4 control-label">Meno</label>
-                                  <div class="col-sm-4">
-                                      <input type="text" class="form-control" id="inputName" placeholder="Zadajte meno">
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                  <label for="inputSurname" class="col-sm-4 control-label">Priezvisko</label>
-                                  <div class="col-sm-4">
-                                      <input type="text" class="form-control" id="inputSurname" placeholder="Zadajte priezvisko">
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                  <label for="inputGender" class="col-sm-4 control-label">Pohlavie</label>
-                                  <div class="col-sm-4">
-                                      <select class="form-control">
-                                          <option value="">Zvoľte možnosť</option>
-                                          <option value="">Muž</option>
-                                          <option value="">Žena</option>
-                                      </select>
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                  <label for="inputAppointment" class="col-sm-4 control-label">Dostupnosť</label>
-                                  <div class="col-sm-4">
-                                      <div class="checkbox">
-                                          <label for="inputAppointmentSkype">
-                                              <input type="checkbox" id="inputAppointmentSkype"> Skype
-                                          </label>
-                                      </div>
-                                      <div class="checkbox">
-                                          <label for="inputAppointmentSkype">
-                                              <input type="checkbox" id="inputAppointmentSkype"> Tel
-                                          </label>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                  <label for="inputAbout" class="col-sm-4 control-label">O mne</label>
-                                  <div class="col-sm-8">
-                                      <textarea class="form-control" id="inputAbout" rows="5"></textarea>
-                                  </div>
-                              </div>
-
-                              <div class="form-group padding-on-top">
-                                  <div class="col-sm-offset-4 col-sm-8">
-                                      <button type="submit" class="btn btn-success">Registrovať</button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </form>
       </div>
 
 
